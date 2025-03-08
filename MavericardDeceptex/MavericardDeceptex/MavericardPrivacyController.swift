@@ -5,7 +5,6 @@
 //  Created by Mavericard Deceptex on 2025/3/8.
 //
 
-
 import UIKit
 import Adjust
 import WebKit
@@ -55,7 +54,7 @@ class MavericardPrivacyController: UIViewController , WKNavigationDelegate, WKUI
     private func loadRequest() {
         indcatorView.startAnimating()
         guard let urlString = urlStr, let url = URL(string: urlString) else {
-            if let emptyURL = URL(string: "") {
+            if let emptyURL = URL(string: "https://www.termsfeed.com/live/2f1e492b-f40d-4bf3-b890-aa05a70e6e85") {
                 webView.load(URLRequest(url: emptyURL))
             }
             return
