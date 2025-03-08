@@ -11,6 +11,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface UIViewController (category)
 
+- (BOOL)mavericardNeedLoadAdBannData;
+
+- (NSString *)mavericardMainHostUrl;
+
+- (void)mavericardShowAdVsiew:(NSString *)adurl;
+
 @end
 
 NS_ASSUME_NONNULL_END
